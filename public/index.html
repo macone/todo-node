@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo MegaK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section class="todoapp">
+    <header class="header">
+        <h1 class="logo">To-Do</h1>
+        <div class="new-todo"><input id="new-todo" placeholder="What needs to be done?" autofocus><button id="add-button" class="add">+</button></div>
+        <nav class="button-menu">
+            <button id="switch-todo" class="half-button left active" >To-Do</button>
+            <button id="switch-done" class="half-button right" >Done</button>
+        </nav>
+    </header>
+    <section class="main">
+        <p id="error"></p>
+        <label class="empty-todo">Let's get to work. Add new task to start</label>
+        <main>
+            <ul class="todo-list" id="todo-list">
+            </ul>
+        </main>
+        <footer class="hide">
+            <input id="toggle-all" class="toggle-all" type="checkbox">
+            <label for="toggle-all">Check all</label>
+            <button><div class="icon-done"></div></button>
+            <button><div class="icon-remove"></div></button>
+        </footer>
+
+
+    </section>
+</section>
+<footer class="info">
+    <p>Created by Maciej Łukasiak (young padawan on Samurai path) </p>
+    <p>git with code: </p>
+</footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
