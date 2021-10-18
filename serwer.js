@@ -12,7 +12,6 @@ app.post('/app/:task/:id?', async (req, res) => {
   let result;
   switch (task) {
     case 'add':
-      console.log('its Add');
       db.push({
         task: req.body.task,
         id: db.length + 1,
@@ -25,7 +24,6 @@ app.post('/app/:task/:id?', async (req, res) => {
       break;
 
     case 'delete':
-      console.log('its delete', id);
       // db = db.map((e) => e.id !== id);
       db = db.map((e) => {
         if (e.id === Number(id)) {

@@ -28,7 +28,6 @@ function updateTasks() {}
 addButton.addEventListener('click', async () => {
   if (newTodo.value.length > 0) {
     const body = JSON.stringify({ task: newTodo.value });
-    console.log(body);
     const response = await fetch('/app/add', {
       method: 'POST',
       headers: {
@@ -60,7 +59,6 @@ const getTasks = async () => {
 };
 
 const taskFetch = async (id, task) => {
-  console.log('fetch', `/app/${task}/${id}`);
   const response = await fetch(`/app/${task}/${id}`, {
     method: 'POST',
   });
@@ -74,7 +72,6 @@ const taskFetch = async (id, task) => {
 };
 
 updateTasks = async (tasks) => {
-  console.log(tasks);
   todoList.innerHTML = '';
   if (tasks.length > 0) {
     document.getElementsByClassName('empty-todo')[0].classList.add('hide');
