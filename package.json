@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "express": "^4.17.1"
-  }
-  "main":"./serwer.js",
+  },
+  "main": "./serwer.js"
 }
